@@ -9,21 +9,20 @@ import jakarta.inject.Named;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Named(value = "bean1")
 @RequestScoped
 public class Bean1 {
 
-   private int nombre;
+    private int nombre;
 
     public int getNombre() {
         return nombre;
     }
 
     public String afficher() {
-        return "affichage_4?nb="+ nombre + "&amp;faces-redirect=true";
+        return "affichage_4?nb=" + nombre + "&amp;faces-redirect=true";
     }
-    
+
     public void setNombre(int nombre) {
         this.nombre = nombre;
     }
@@ -36,5 +35,5 @@ public class Bean1 {
         }
         return l;
     }
-    
+
 }
